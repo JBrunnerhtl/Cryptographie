@@ -11,7 +11,10 @@ public sealed class Crypt : ICrypt
         {
             Ascii += (char)i;
         }
+        
     }
+    
+    
     
    
 }
