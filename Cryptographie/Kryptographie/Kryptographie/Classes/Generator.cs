@@ -27,8 +27,4 @@ public class Generator : IGenerator
         return code;
     }
     
-    public void GetCode()
-    {
-        
-    }
 }

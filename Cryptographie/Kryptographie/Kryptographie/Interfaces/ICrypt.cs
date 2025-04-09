@@ -2,7 +2,5 @@ namespace Kryptographie;
 
 public interface ICrypt
 {
-    string Ascii { get;}
-    
-
+    protected string Ascii { get;}
 }
