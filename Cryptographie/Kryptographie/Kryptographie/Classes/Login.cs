@@ -4,6 +4,7 @@ public static class Login
 {
     public static bool CheckIfLoginWasCorrect(User user) // If users has an account and the login was correct
     {
+        bool passwordIsWrong = false;
         if (!File.Exists("db.txt"))
         {
             throw new Exception("Database does not exist");
@@ -19,11 +20,24 @@ public static class Login
                 {
                     return true;
                 }
+                else if(data[0] == user.Username && data[1] != user.Password)
+                {
+                    passwordIsWrong = true;
+                }
             }
         }
 
-        Console.WriteLine("Du hast keinen Account");
-        CreateAccount();
+        if (passwordIsWrong)
+        {
+            Console.WriteLine("Dein Passwort ist falsch");
+            GetLogin();
+        }
+        else
+        {
+            Console.WriteLine("Du hast keinen Account");
+            CreateAccount();
+        }
+        
         return false;
     }
 

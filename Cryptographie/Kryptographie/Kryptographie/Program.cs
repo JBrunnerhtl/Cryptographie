@@ -27,8 +27,9 @@ class Program
         do
         {
             isValid = int.TryParse(Console.ReadLine(), out action);
-            if (!isValid)
+            if (!isValid || (action != 1 && action != 2))
             {
+                isValid = false;
                 Console.WriteLine("Bitte gebe eine Zahl ein[1, 2]");
             }
 
