@@ -28,3 +28,4 @@ C:\Users\Lenovo\Documents\GitHub\Cryptographie\Cryptographie\Kryptographie\Krypt
 C:\Users\Lenovo\Documents\GitHub\Cryptographie\Cryptographie\Kryptographie\Kryptographie\obj\Debug\net8.0\Kryptographie.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\Cryptographie\Cryptographie\Kryptographie\Kryptographie\obj\Debug\net8.0\ref\Kryptographie.dll
 C:\Users\Lenovo\Documents\GitHub\Cryptographie\Cryptographie\Kryptographie\Kryptographie\bin\Debug\net8.0\db.txt
+C:\Users\Lenovo\Documents\GitHub\Cryptographie\Cryptographie\Kryptographie\Kryptographie\bin\Debug\net8.0\input.txt

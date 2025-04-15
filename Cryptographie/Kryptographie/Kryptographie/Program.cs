@@ -9,6 +9,8 @@ class Program
 {
     public static readonly List<string> Options = new List<string>() {"Ja", "Nein"};
     public static readonly Generator Generator = new();
+    public static Crypt Cryptgrapher = new();
+    public static Decrypt Decryptgrapher = new();
     static void Main(string[] args)
     {
         Console.WriteLine("Hallo Willkommen bei der Kryptographie");
@@ -34,6 +36,15 @@ class Program
             }
 
         } while (!isValid);
+
+        if (action == 1)
+        {
+            Cryptgrapher.CryptText(File.ReadAllText("input.txt"), user);
+        }
+        else
+        {
+            Decryptgrapher.DecryptText(File.ReadAllText("input.txt"), user);
+        }
         
         
 

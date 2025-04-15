@@ -7,11 +7,18 @@ public sealed class Crypt : BaseCrypt
         GetCryptCode(user);
 
         char[] charText = text.ToCharArray();
+       
         for (int i = 0; i < text.Length; i++)
         {
-            charText[i] = _code[charText[i]];
+            charText[i] = _code[charText[i]- 31];
         }
-        File.WriteAllText("output.txt", charText.ToString());
+
+        string newString = "";
+        foreach (char c in charText)
+        {
+            newString += c;
+        }
+        File.WriteAllText("output.txt", newString);
         
     }
     

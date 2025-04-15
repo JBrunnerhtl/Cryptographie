@@ -27,7 +27,7 @@ public abstract class BaseCrypt : ICrypt
             var data = dataLine.Split(";");
             if (data[0] == user.Username && data[1] == user.Password)
             {
-                _code = data[2];
+                _code = data[2] + data[3];
             }
         }
     }
